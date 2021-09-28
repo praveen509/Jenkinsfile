@@ -1,0 +1,15 @@
+node {
+    for (int i=0; i<=2;i++) {
+        stage "Stage #" +i
+        print "Hello World!"
+        if (i==0)
+        {
+            git url...
+            echo "Running on stage #0"
+        }
+        else {
+            build 'job name'
+            echo 'Running on Stage #1'
+        }
+    }
+}
